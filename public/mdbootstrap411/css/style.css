@@ -1,0 +1,266 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fafafa;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.btn-circle {
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.tabla-resultados{
+  width: 60%; 
+  text-align: center; 
+  margin: 0 auto; 
+  padding: 5%;
+}
+
+@media (min-width: 1280px) {
+  .tabla-materias{
+    width: 90%;
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .tabla-materias{
+    width: 65%;
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 5%;
+  }
+}
+
+table tbody tr{
+  background-color: #fafafa;
+}
+
+@media (min-width: 1280px) {
+  .cajon-crear-editar{
+    background-color: #fafafa;
+    width: 85%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cajon-crear-editar{
+    background-color: #fafafa;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cajon-tareas{
+    width: 85%; 
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .cajon-tareas{
+    width: 70%; 
+    text-align: center; 
+    margin: 0 auto; 
+    padding: 5%;
+  }
+}
+
+.btn-circle.btn-md { 
+  width: 50px; 
+  height: 50px; 
+  padding: 7px 10px; 
+  border-radius: 25px; 
+  font-size: 10px; 
+  text-align: center; 
+} 
+
+.tarjeta-comoUsar{
+  background-color: #fafafa;
+  margin: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
+  padding: 2%;
+}
+
+.tarjeta-comoUsar h2{
+  margin-bottom: 3%;
+}
+
+.tarjeta-comoUsar p{
+  color: #212529;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+#sidebar {
+  width: 20%;
+  background: black;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+  color: inherit;
+  padding: 5%;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: black;
+}
+
+#sidebar .sidebar-header img{
+  width: 100%;
+  padding: 5%;
+}
+
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: gray;
+  background: #fff;
+}
+
+#sidebar ul li a:active {
+  color: #ffff;
+  background: gray;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+  background: gray;
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+li a i{
+  margin-right: 5%;
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background:gray;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  padding: 0px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-image: url("/images/fondo.png");*/
+  background-color: #E3D6D2;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+
